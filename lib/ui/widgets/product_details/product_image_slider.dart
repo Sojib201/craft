@@ -16,7 +16,7 @@ class ProductIamgeSlider extends StatelessWidget {
     return Stack(
       children: [
         CarouselSlider(
-          //carouselController: _carouselController,
+          carouselController: CarouselSliderController(),
           options: CarouselOptions(
               height: 230,
               viewportFraction: 1,

@@ -7,7 +7,7 @@ import '../../utils/app_colors.dart';
 class HomeBannerSlider extends StatelessWidget {
   HomeBannerSlider({Key? key, required this.productSliderModel}) : super(key: key);
 
-  final CarouselController _carouselController = CarouselController();
+ //final CarouselController _carouselController = CarouselController();
   final ValueNotifier<int> CurrentSelectedIndex = ValueNotifier(0);
   final ProductSliderModel productSliderModel;
 
@@ -16,7 +16,7 @@ class HomeBannerSlider extends StatelessWidget {
     return Column(
       children: [
         CarouselSlider(
-          //carouselController: _carouselController,
+          carouselController: CarouselSliderController(),
           options: CarouselOptions(
               height: 180.0,
               autoPlay: true,
